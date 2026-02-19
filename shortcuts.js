@@ -69,19 +69,26 @@
 
   function confirmDiscardModal(onConfirm) {
     // Wait for the discard confirmation modal to appear, then click "Discard Ticket"
-    const maxAttempts = 10;
-    let attempts = 0;
-    const interval = setInterval(() => {
-      attempts++;
-      const btn = document.querySelector('button.bg-grapefruit');
-      if (btn && btn.textContent.trim() === 'Discard Ticket') {
-        clearInterval(interval);
-        btn.click();
-        if (onConfirm) setTimeout(onConfirm, 200);
-      } else if (attempts >= maxAttempts) {
-        clearInterval(interval);
-      }
-    }, 100);
+    // Delay start since the modal appears after the dropdown status change completes
+    setTimeout(() => {
+      const maxAttempts = 20;
+      let attempts = 0;
+      const interval = setInterval(() => {
+        attempts++;
+        const btns = document.querySelectorAll('button.bg-grapefruit');
+        for (const btn of btns) {
+          if (btn.textContent.trim() === 'Discard Ticket') {
+            clearInterval(interval);
+            btn.click();
+            if (onConfirm) setTimeout(onConfirm, 200);
+            return;
+          }
+        }
+        if (attempts >= maxAttempts) {
+          clearInterval(interval);
+        }
+      }, 150);
+    }, 300);
   }
 
   function openReactSelectDropdown(selectId) {
