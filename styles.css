@@ -6,7 +6,7 @@
 /* --- Helper Button — inherits Keeping's Tailwind classes, we just add extras --- */
 .ks-helper-btn {
   gap: 6px;
-  font-size: 14px;
+  font-size: 13px;
   font-family: inherit;
   font-weight: 400;
   color: #374151;
