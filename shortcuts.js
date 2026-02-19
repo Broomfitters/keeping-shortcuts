@@ -113,7 +113,7 @@
     if (e.shiftKey && STATUS_MAP[key]) {
       e.preventDefault();
       setReactSelectValue('select-status', STATUS_MAP[key]);
-      setTimeout(clickNextChevron, 200);
+      setTimeout(clickPrevChevron, 200);
       return;
     }
 

@@ -217,7 +217,7 @@
     // Footer note
     const note = document.createElement('div');
     note.className = 'ks-note';
-    note.textContent = 'Hold shift + status key to set and advance';
+    note.textContent = 'Hold shift + status key to set and go back';
     modal.appendChild(note);
 
     overlay.appendChild(modal);
