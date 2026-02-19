@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Keeping Keyboard Shortcuts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Keyboard shortcuts for Keeping.com helpdesk app",
   "permissions": ["storage"],
   "content_scripts": [

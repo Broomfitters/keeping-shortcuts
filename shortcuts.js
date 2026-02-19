@@ -189,6 +189,14 @@
       openReactSelectDropdown('select-tag');
       return;
     }
+
+    // Reply
+    if (key === 'r') {
+      e.preventDefault();
+      const replyBtn = document.querySelector('img[src*="mailbox-reply"]');
+      if (replyBtn) replyBtn.closest('button').click();
+      return;
+    }
   }
 
   // ---------------------------------------------------------------------------

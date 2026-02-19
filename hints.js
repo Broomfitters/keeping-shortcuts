@@ -27,6 +27,10 @@
     { selector: '.next-chevron',     key: 'j' },
   ];
 
+  const BUTTON_HINTS = [
+    { selector: 'img[src*="mailbox-reply"]', key: 'r' },
+  ];
+
   // ---------------------------------------------------------------------------
   // Helpers
   // ---------------------------------------------------------------------------
@@ -113,6 +117,17 @@
 
       const hint = createHintSpan(def.key);
       wrapper.insertAdjacentElement('afterend', hint);
+    }
+
+    // Button hints — place hint next to standalone buttons
+    for (const def of BUTTON_HINTS) {
+      const img = document.querySelector(def.selector);
+      if (!img) continue;
+      const btn = img.closest('button');
+      if (!btn) continue;
+
+      const hint = createHintSpan(def.key);
+      btn.appendChild(hint);
     }
   }
 

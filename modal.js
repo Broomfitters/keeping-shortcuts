@@ -99,6 +99,7 @@
       rows: [
         { key: 'a', action: 'Assign' },
         { key: 't', action: 'Tag' },
+        { key: 'r', action: 'Reply' },
       ],
     },
   ];
