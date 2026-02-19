@@ -67,6 +67,22 @@
     }, 50);
   }
 
+  function confirmDiscardModal() {
+    // Wait for the discard confirmation modal to appear, then click "Discard Ticket"
+    const maxAttempts = 10;
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      const btn = document.querySelector('button.bg-grapefruit');
+      if (btn && btn.textContent.trim() === 'Discard Ticket') {
+        clearInterval(interval);
+        btn.click();
+      } else if (attempts >= maxAttempts) {
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+
   function openReactSelectDropdown(selectId) {
     const container = document.querySelector(`#${selectId}`);
     if (!container) return;
@@ -113,6 +129,9 @@
     if (e.shiftKey && STATUS_MAP[key]) {
       e.preventDefault();
       setReactSelectValue('select-status', STATUS_MAP[key]);
+      if (key === 'd') {
+        confirmDiscardModal();
+      }
       setTimeout(clickPrevChevron, 200);
       return;
     }
@@ -135,6 +154,9 @@
     if (STATUS_MAP[key]) {
       e.preventDefault();
       setReactSelectValue('select-status', STATUS_MAP[key]);
+      if (key === 'd') {
+        confirmDiscardModal();
+      }
       return;
     }
 
