@@ -253,10 +253,12 @@
   // ---------------------------------------------------------------------------
 
   function findHelpButton() {
-    // The Help button may contain an icon + text, so textContent could be
-    // more than just "Help".  Look for any clickable element whose text
-    // includes "Help" in the top toolbar area.
-    const candidates = document.querySelectorAll('button, [role="button"], a, div[class*="cursor-pointer"]');
+    // The Help button is an <a> linking to docs.keeping.com/help
+    const link = document.querySelector('a[href*="keeping.com/help"]');
+    if (link) return link;
+
+    // Fallback: look for any element whose text includes "Help"
+    const candidates = document.querySelectorAll('a, button, [role="button"]');
     for (const el of candidates) {
       const text = el.textContent.trim();
       if (text === 'Help' || text.endsWith('Help') || text.startsWith('Help')) {
