@@ -168,6 +168,11 @@
     enabled = !!value;
   }
 
+  function isEnabled() {
+    return enabled;
+  }
+
   window.KeepingShortcuts.init = init;
   window.KeepingShortcuts.setEnabled = setEnabled;
+  window.KeepingShortcuts.isEnabled = isEnabled;
 })();
