@@ -57,6 +57,10 @@
       for (const opt of options) {
         if (opt.textContent.trim() === optionText) {
           opt.click();
+          // Blur focus so subsequent keyboard shortcuts still work
+          setTimeout(() => {
+            if (document.activeElement) document.activeElement.blur();
+          }, 50);
           return;
         }
       }

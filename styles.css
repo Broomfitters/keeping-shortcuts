@@ -3,27 +3,22 @@
    All classes prefixed .ks- to avoid collisions
    ============================================ */
 
-/* --- Helper Button --- */
+/* --- Helper Button — inherits Keeping's Tailwind classes, we just add extras --- */
 .ks-helper-btn {
-  display: inline-flex;
-  align-items: center;
   gap: 6px;
-  padding: 5px 12px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   color: #374151;
-  background: #fff;
-  border: 1px solid #d1d5db;
-  border-radius: 9999px;
+  border: none;
   cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
-  line-height: 1.4;
+  transition: opacity 0.15s;
+  line-height: 1;
+  text-decoration: none;
 }
 
 .ks-helper-btn:hover {
-  background: #f3f4f6;
-  border-color: #9ca3af;
+  opacity: 0.8;
 }
 
 .ks-helper-btn svg {
@@ -206,13 +201,20 @@
 }
 
 /* --- Shift-to-Reveal Hints --- */
+.ks-hint-group {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .ks-hint {
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-size: 11px;
   font-weight: 500;
-  color: #374151;
-  background: #f3f4f6;
-  border: 1px solid #d1d5db;
+  color: #e45125;
+  background: #fef2ee;
+  border: 1px solid #f5b8a5;
   border-radius: 3px;
   padding: 1px 5px;
   line-height: 1.3;

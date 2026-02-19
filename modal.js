@@ -109,7 +109,8 @@
 
   function createHelperButton() {
     const btn = document.createElement('button');
-    btn.className = 'ks-helper-btn';
+    // Use Keeping's own Tailwind classes for a native look, plus our class for extras
+    btn.className = 'ks-helper-btn rounded bg-light-blue py-1 px-2 inline-flex items-center justify-center mr-2 h-7';
     btn.appendChild(createKeyboardIcon());
     const label = document.createTextNode(' Shortcuts');
     btn.appendChild(label);
@@ -253,9 +254,17 @@
   // ---------------------------------------------------------------------------
 
   function findHelpButton() {
-    const buttons = document.querySelectorAll('button, [role="button"]');
-    for (const btn of buttons) {
-      if (btn.textContent.trim() === 'Help') return btn;
+    // The Help button is an <a> linking to docs.keeping.com/help
+    const link = document.querySelector('a[href*="keeping.com/help"]');
+    if (link) return link;
+
+    // Fallback: look for any element whose text includes "Help"
+    const candidates = document.querySelectorAll('a, button, [role="button"]');
+    for (const el of candidates) {
+      const text = el.textContent.trim();
+      if (text === 'Help' || text.endsWith('Help') || text.startsWith('Help')) {
+        return el;
+      }
     }
     return null;
   }
