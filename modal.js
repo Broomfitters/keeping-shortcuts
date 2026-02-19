@@ -253,9 +253,15 @@
   // ---------------------------------------------------------------------------
 
   function findHelpButton() {
-    const buttons = document.querySelectorAll('button, [role="button"]');
-    for (const btn of buttons) {
-      if (btn.textContent.trim() === 'Help') return btn;
+    // The Help button may contain an icon + text, so textContent could be
+    // more than just "Help".  Look for any clickable element whose text
+    // includes "Help" in the top toolbar area.
+    const candidates = document.querySelectorAll('button, [role="button"], a, div[class*="cursor-pointer"]');
+    for (const el of candidates) {
+      const text = el.textContent.trim();
+      if (text === 'Help' || text.endsWith('Help') || text.startsWith('Help')) {
+        return el;
+      }
     }
     return null;
   }

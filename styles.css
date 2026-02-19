@@ -206,6 +206,13 @@
 }
 
 /* --- Shift-to-Reveal Hints --- */
+.ks-hint-group {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .ks-hint {
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-size: 11px;
