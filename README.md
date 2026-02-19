@@ -37,6 +37,7 @@ Hold **Shift** with any status key (e.g. `Shift+c`) to set the status *and* adva
 |-----|--------|
 | `a` | Open the Assign dropdown |
 | `t` | Open the Tag dropdown |
+| `r` | Reply |
 
 Shortcuts are disabled while typing in any input field, textarea, or rich text editor.
 
