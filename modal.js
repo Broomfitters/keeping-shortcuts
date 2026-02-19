@@ -109,7 +109,8 @@
 
   function createHelperButton() {
     const btn = document.createElement('button');
-    btn.className = 'ks-helper-btn';
+    // Use Keeping's own Tailwind classes for a native look, plus our class for extras
+    btn.className = 'ks-helper-btn rounded bg-light-blue py-1 px-2 inline-flex items-center justify-center mr-2 h-7';
     btn.appendChild(createKeyboardIcon());
     const label = document.createTextNode(' Shortcuts');
     btn.appendChild(label);
