@@ -13,6 +13,8 @@
   chrome.storage.local.get({ enabled: true }, (data) => {
     KS.setEnabled(data.enabled);
     KS.init();
+    if (KS.modal) KS.modal.init(data.enabled);
+    if (KS.hints) KS.hints.init();
   });
 
   // Listen for toggle changes from the popup / other scripts.
