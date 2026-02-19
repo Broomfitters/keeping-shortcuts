@@ -67,7 +67,7 @@
     }, 50);
   }
 
-  function confirmDiscardModal() {
+  function confirmDiscardModal(onConfirm) {
     // Wait for the discard confirmation modal to appear, then click "Discard Ticket"
     const maxAttempts = 10;
     let attempts = 0;
@@ -77,6 +77,7 @@
       if (btn && btn.textContent.trim() === 'Discard Ticket') {
         clearInterval(interval);
         btn.click();
+        if (onConfirm) setTimeout(onConfirm, 200);
       } else if (attempts >= maxAttempts) {
         clearInterval(interval);
       }
@@ -130,9 +131,10 @@
       e.preventDefault();
       setReactSelectValue('select-status', STATUS_MAP[key]);
       if (key === 'd') {
-        confirmDiscardModal();
+        confirmDiscardModal(clickPrevChevron);
+      } else {
+        setTimeout(clickPrevChevron, 200);
       }
-      setTimeout(clickPrevChevron, 200);
       return;
     }
 
