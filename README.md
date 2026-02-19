@@ -40,6 +40,14 @@ Hold **Shift** with any status key (e.g. `Shift+c`) to set the status *and* adva
 
 Shortcuts are disabled while typing in any input field, textarea, or rich text editor.
 
+## Helper Button & Toggle
+
+A **Shortcuts** button appears in the Keeping toolbar next to the Help button. Click it to open a reference modal showing all available shortcuts. The modal includes an on/off toggle to enable or disable shortcuts without uninstalling the extension — your preference is saved across sessions.
+
+## Shift-to-Reveal Hints
+
+Hold **Shift** to see key hint badges appear inline next to each control — status, priority, assign, tag dropdowns and navigation chevrons. Release Shift to hide them. A quick way to remember what keys do what.
+
 ## Install
 
 1. Clone or download this repo
