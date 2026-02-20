@@ -128,6 +128,27 @@
 
   function onKeydown(e) {
     if (!enabled) return;
+
+    // Escape blurs any focused input (e.g. assign/tag dropdowns)
+    if (e.key === 'Escape' && isInputFocused()) {
+      e.preventDefault();
+      document.activeElement.blur();
+      return;
+    }
+
+    // Double Enter blurs: first Enter selects the option (React Select handles it),
+    // second Enter (when dropdown menu is already closed) blurs the input
+    if (e.key === 'Enter' && isInputFocused()) {
+      const select = document.activeElement.closest('[class*="__control"], [id^="select-"]');
+      const menu = select && select.closest('[id^="select-"]')?.querySelector('[class*="__menu"]');
+      if (!menu) {
+        // No menu open — this is the second Enter, blur out
+        e.preventDefault();
+        document.activeElement.blur();
+      }
+      return;
+    }
+
     if (isInputFocused()) return;
     if (e.ctrlKey || e.metaKey || e.altKey) return;
 
