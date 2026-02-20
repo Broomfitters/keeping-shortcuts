@@ -100,6 +100,8 @@
         { key: 'a', action: 'Assign' },
         { key: 't', action: 'Tag' },
         { key: 'r', action: 'Reply' },
+        { key: 'Esc', action: 'Close dropdown' },
+        { key: '↵↵', action: 'Select & close dropdown' },
       ],
     },
   ];

@@ -38,6 +38,10 @@ Hold **Shift** with any status key (e.g. `Shift+c`) to set the status *and* adva
 | `a` | Open the Assign dropdown |
 | `t` | Open the Tag dropdown |
 | `r` | Reply |
+| `Escape` | Close dropdown / return to shortcuts |
+| `Enter` `Enter` | Select option and close dropdown |
+
+In the Assign and Tag dropdowns, type to filter and press **Enter** to select an option. You can select multiple options — press **Enter** again (with the menu closed) to exit the dropdown and return to shortcut mode. **Escape** exits immediately.
 
 Shortcuts are disabled while typing in any input field, textarea, or rich text editor.
 
