@@ -15,7 +15,8 @@
   // Hint definitions: [container selector, hint keys, selector type]
   // ---------------------------------------------------------------------------
 
-  const DROPDOWN_HINTS = [
+  // --- Ticket detail view hints ---
+  const DETAIL_DROPDOWN_HINTS = [
     { id: 'select-status',      keys: ['o', 'p', 'c', 'd'] },
     { id: 'select-priority',    keys: ['`', '1', '2', '3'] },
     { id: 'select-assigned-to', keys: ['a'] },
@@ -29,6 +30,14 @@
 
   const BUTTON_HINTS = [
     { selector: 'img[src*="mailbox-reply"]', key: 'r' },
+  ];
+
+  // --- Inbox list view hints ---
+  const INBOX_DROPDOWN_HINTS = [
+    { id: 'inbox-select-set-status',   keys: ['o', 'p', 'c', 'd'] },
+    { id: 'inbox-select-set-priority', keys: ['`', '1', '2', '3'] },
+    { id: 'inbox-select-assign-agent', keys: ['a'] },
+    { id: 'inbox-select-set-tag',      keys: ['t'] },
   ];
 
   // ---------------------------------------------------------------------------
@@ -87,17 +96,25 @@
     // Guard: already injected
     if (document.querySelector('.ks-hint')) return;
 
+    const onInbox = window.KeepingShortcuts.isInboxList && window.KeepingShortcuts.isInboxList();
+
+    if (onInbox) {
+      injectInboxHints();
+    } else {
+      injectDetailHints();
+    }
+  }
+
+  function injectDetailHints() {
     // Dropdown hints — place next to the label, not the dropdown control
-    for (const def of DROPDOWN_HINTS) {
+    for (const def of DETAIL_DROPDOWN_HINTS) {
       const container = document.getElementById(def.id);
       if (!container) continue;
 
-      // Try to find the label element; fall back to appending after the control
       const label = findLabelFor(container);
       const target = label || container.parentElement;
       if (!target) continue;
 
-      // Wrap hints in a small container so they sit inline
       const hintGroup = document.createElement('span');
       hintGroup.className = 'ks-hint-group';
       for (const key of def.keys) {
@@ -106,28 +123,43 @@
       target.appendChild(hintGroup);
     }
 
-    // Chevron hints — place each hint right next to its own chevron
+    // Chevron hints
     for (const def of CHEVRON_HINTS) {
       const chevron = document.querySelector(def.selector);
       if (!chevron) continue;
-
-      // Insert hint right after the chevron element itself
       const wrapper = chevron.closest('div[class*="cursor-pointer"]') || chevron.parentElement;
       if (!wrapper) continue;
-
       const hint = createHintSpan(def.key);
       wrapper.insertAdjacentElement('afterend', hint);
     }
 
-    // Button hints — place hint next to standalone buttons
+    // Button hints
     for (const def of BUTTON_HINTS) {
       const img = document.querySelector(def.selector);
       if (!img) continue;
       const btn = img.closest('button');
       if (!btn) continue;
-
       const hint = createHintSpan(def.key);
       btn.appendChild(hint);
+    }
+  }
+
+  function injectInboxHints() {
+    // Inbox toolbar dropdown hints
+    for (const def of INBOX_DROPDOWN_HINTS) {
+      const container = document.getElementById(def.id);
+      if (!container) continue;
+
+      const hintGroup = document.createElement('span');
+      hintGroup.className = 'ks-hint-group';
+      for (const key of def.keys) {
+        hintGroup.appendChild(createHintSpan(key));
+      }
+      // Place after the dropdown control
+      const control = container.querySelector('[class*="__control"]');
+      if (control) {
+        control.insertAdjacentElement('afterend', hintGroup);
+      }
     }
   }
 
