@@ -68,12 +68,43 @@
   // ---------------------------------------------------------------------------
   // Shortcut reference data
   // ---------------------------------------------------------------------------
-  const SECTIONS = [
+  const INBOX_SECTIONS = [
+    {
+      title: 'Inbox Navigation',
+      rows: [
+        { key: 'j / ↓', action: 'Next message' },
+        { key: 'k / ↑', action: 'Previous message' },
+        { key: '↵', action: 'Open message' },
+        { key: 'x', action: 'Toggle select' },
+        { key: 'v', action: 'Next mailbox' },
+        { key: 'V', action: 'Previous mailbox' },
+      ],
+    },
+    {
+      title: 'Inbox Actions',
+      rows: [
+        { key: 'o', action: 'Open' },
+        { key: 'p', action: 'Pending' },
+        { key: 'c', action: 'Closed' },
+        { key: 'd', action: 'Discard' },
+        { key: '`', action: 'Priority: None' },
+        { key: '1', action: 'Priority: Low' },
+        { key: '2', action: 'Priority: Medium' },
+        { key: '3', action: 'Priority: High' },
+        { key: 'a', action: 'Assign' },
+        { key: 't', action: 'Tag' },
+      ],
+    },
+  ];
+
+  const DETAIL_SECTIONS = [
     {
       title: 'Navigation',
       rows: [
         { key: 'j', action: 'Next ticket' },
         { key: 'k', action: 'Previous ticket' },
+        { key: 'v', action: 'Next mailbox' },
+        { key: 'V', action: 'Previous mailbox' },
       ],
     },
     {
@@ -100,6 +131,7 @@
         { key: 'a', action: 'Assign' },
         { key: 't', action: 'Tag' },
         { key: 'r', action: 'Reply' },
+        { key: '⌘↵', action: 'Send note' },
         { key: 'Esc', action: 'Close dropdown' },
         { key: '↵↵', action: 'Select & close dropdown' },
       ],
@@ -212,15 +244,23 @@
     toggleRow.appendChild(toggle);
     modal.appendChild(toggleRow);
 
-    // Shortcut sections
-    for (const section of SECTIONS) {
-      modal.appendChild(buildSection(section));
+    // Shortcut sections — show relevant view's shortcuts in two columns
+    const onInbox = KS.isInboxList && KS.isInboxList();
+    const sections = onInbox ? INBOX_SECTIONS : DETAIL_SECTIONS;
+
+    const grid = document.createElement('div');
+    grid.className = 'ks-grid';
+    for (const section of sections) {
+      grid.appendChild(buildSection(section));
     }
+    modal.appendChild(grid);
 
     // Footer note
     const note = document.createElement('div');
     note.className = 'ks-note';
-    note.textContent = 'Hold shift + status key to set and go back';
+    note.textContent = onInbox
+      ? 'Actions apply to active item (or all selected items)'
+      : 'Hold shift + status key to set and go back';
     modal.appendChild(note);
 
     overlay.appendChild(modal);
