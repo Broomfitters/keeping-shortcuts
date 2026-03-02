@@ -200,6 +200,13 @@
   margin-top: 8px;
 }
 
+/* --- Inbox Active Item --- */
+.conversation-list-item.ks-active {
+  background: #f0f4ff;
+  border-left: 3px solid #e45125;
+  padding-left: calc(1.75rem - 3px); /* offset the 3px border so content doesn't shift */
+}
+
 /* --- Shift-to-Reveal Hints --- */
 .ks-hint-group {
   display: inline-flex;
