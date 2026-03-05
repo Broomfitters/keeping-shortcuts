@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.2
+## 2.0.0
 
 - Add Safari Web Extension support (macOS) via Xcode project
 - Add Firefox support (v109+) with `browser_specific_settings.gecko`
