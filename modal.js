@@ -8,6 +8,7 @@
 (function () {
   'use strict';
 
+  const api = globalThis.browser || globalThis.chrome;
   const KS = window.KeepingShortcuts = window.KeepingShortcuts || {};
 
   // ---------------------------------------------------------------------------
@@ -231,7 +232,7 @@
     checkbox.addEventListener('change', function () {
       var newValue = checkbox.checked;
       currentEnabled = newValue;
-      chrome.storage.local.set({ enabled: newValue });
+      api.storage.local.set({ enabled: newValue });
       KS.setEnabled(newValue);
     });
 

@@ -7,10 +7,11 @@
 (function () {
   'use strict';
 
+  const api = globalThis.browser || globalThis.chrome;
   const KS = window.KeepingShortcuts;
 
   // Load persisted enabled state (default: true), then boot.
-  chrome.storage.local.get({ enabled: true }, (data) => {
+  api.storage.local.get({ enabled: true }, (data) => {
     KS.setEnabled(data.enabled);
     KS.init();
     if (KS.modal) KS.modal.init(data.enabled);
@@ -18,7 +19,7 @@
   });
 
   // Listen for toggle changes from the popup / other scripts.
-  chrome.storage.onChanged.addListener((changes) => {
+  api.storage.onChanged.addListener((changes) => {
     if (changes.enabled) {
       KS.setEnabled(changes.enabled.newValue);
     }

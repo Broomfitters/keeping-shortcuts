@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F4BD52A2F59C469003116AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BD5292F59C469003116AB /* AppDelegate.swift */; };
+		3F4BD52E2F59C469003116AB /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD52C2F59C469003116AB /* Main.html */; };
+		3F4BD5302F59C469003116AB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD52F2F59C469003116AB /* Icon.png */; };
+		3F4BD5322F59C469003116AB /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5312F59C469003116AB /* Style.css */; };
+		3F4BD5342F59C469003116AB /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5332F59C469003116AB /* Script.js */; };
+		3F4BD5362F59C469003116AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BD5352F59C469003116AB /* ViewController.swift */; };
+		3F4BD5392F59C469003116AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5372F59C469003116AB /* Main.storyboard */; };
+		3F4BD53B2F59C46B003116AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD53A2F59C46B003116AB /* Assets.xcassets */; };
+		3F4BD5422F59C46C003116AB /* Keeping Shortcuts Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F4BD5412F59C46C003116AB /* Keeping Shortcuts Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F4BD5472F59C46C003116AB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BD5462F59C46C003116AB /* SafariWebExtensionHandler.swift */; };
+		3F4BD55E2F59C46C003116AB /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5532F59C46C003116AB /* styles.css */; };
+		3F4BD55F2F59C46C003116AB /* shortcuts.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5542F59C46C003116AB /* shortcuts.js */; };
+		3F4BD5602F59C46C003116AB /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5552F59C46C003116AB /* docs */; };
+		3F4BD5612F59C46C003116AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5562F59C46C003116AB /* README.md */; };
+		3F4BD5622F59C46C003116AB /* hints.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5572F59C46C003116AB /* hints.js */; };
+		3F4BD5632F59C46C003116AB /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5582F59C46C003116AB /* icons */; };
+		3F4BD5642F59C46C003116AB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD5592F59C46C003116AB /* manifest.json */; };
+		3F4BD5652F59C46C003116AB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD55A2F59C46C003116AB /* content.js */; };
+		3F4BD5662F59C46C003116AB /* modal.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD55B2F59C46C003116AB /* modal.js */; };
+		3F4BD5672F59C46C003116AB /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD55C2F59C46C003116AB /* CLAUDE.md */; };
+		3F4BD5682F59C46C003116AB /* Keeping Shortcuts in Resources */ = {isa = PBXBuildFile; fileRef = 3F4BD55D2F59C46C003116AB /* Keeping Shortcuts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F4BD5432F59C46C003116AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4BD51E2F59C469003116AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4BD5402F59C46C003116AB;
+			remoteInfo = "Keeping Shortcuts Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F4BD54E2F59C46C003116AB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F4BD5422F59C46C003116AB /* Keeping Shortcuts Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F4BD5262F59C469003116AB /* Keeping Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keeping Shortcuts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4BD5292F59C469003116AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F4BD52D2F59C469003116AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		3F4BD52F2F59C469003116AB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3F4BD5312F59C469003116AB /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		3F4BD5332F59C469003116AB /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		3F4BD5352F59C469003116AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F4BD5382F59C469003116AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F4BD53A2F59C46B003116AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F4BD53C2F59C46B003116AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4BD5412F59C46C003116AB /* Keeping Shortcuts Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Keeping Shortcuts Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4BD5462F59C46C003116AB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		3F4BD5482F59C46C003116AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4BD5532F59C46C003116AB /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = styles.css; path = ../../styles.css; sourceTree = "<group>"; };
+		3F4BD5542F59C46C003116AB /* shortcuts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = shortcuts.js; path = ../../shortcuts.js; sourceTree = "<group>"; };
+		3F4BD5552F59C46C003116AB /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = docs; path = ../../docs; sourceTree = "<group>"; };
+		3F4BD5562F59C46C003116AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		3F4BD5572F59C46C003116AB /* hints.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = hints.js; path = ../../hints.js; sourceTree = "<group>"; };
+		3F4BD5582F59C46C003116AB /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../icons; sourceTree = "<group>"; };
+		3F4BD5592F59C46C003116AB /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		3F4BD55A2F59C46C003116AB /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../content.js; sourceTree = "<group>"; };
+		3F4BD55B2F59C46C003116AB /* modal.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = modal.js; path = ../../modal.js; sourceTree = "<group>"; };
+		3F4BD55C2F59C46C003116AB /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CLAUDE.md; path = ../../CLAUDE.md; sourceTree = "<group>"; };
+		3F4BD55D2F59C46C003116AB /* Keeping Shortcuts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Keeping Shortcuts"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F4BD5232F59C469003116AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BD53E2F59C46C003116AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F4BD51D2F59C469003116AB = {
+			isa = PBXGroup;
+			children = (
+				3F4BD5282F59C469003116AB /* Keeping Shortcuts */,
+				3F4BD5452F59C46C003116AB /* Keeping Shortcuts Extension */,
+				3F4BD5272F59C469003116AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F4BD5272F59C469003116AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BD5262F59C469003116AB /* Keeping Shortcuts.app */,
+				3F4BD5412F59C46C003116AB /* Keeping Shortcuts Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F4BD5282F59C469003116AB /* Keeping Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BD5292F59C469003116AB /* AppDelegate.swift */,
+				3F4BD5352F59C469003116AB /* ViewController.swift */,
+				3F4BD5372F59C469003116AB /* Main.storyboard */,
+				3F4BD53A2F59C46B003116AB /* Assets.xcassets */,
+				3F4BD53C2F59C46B003116AB /* Info.plist */,
+				3F4BD52B2F59C469003116AB /* Resources */,
+			);
+			path = "Keeping Shortcuts";
+			sourceTree = "<group>";
+		};
+		3F4BD52B2F59C469003116AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BD52C2F59C469003116AB /* Main.html */,
+				3F4BD52F2F59C469003116AB /* Icon.png */,
+				3F4BD5312F59C469003116AB /* Style.css */,
+				3F4BD5332F59C469003116AB /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F4BD5452F59C46C003116AB /* Keeping Shortcuts Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BD5522F59C46C003116AB /* Resources */,
+				3F4BD5462F59C46C003116AB /* SafariWebExtensionHandler.swift */,
+				3F4BD5482F59C46C003116AB /* Info.plist */,
+			);
+			path = "Keeping Shortcuts Extension";
+			sourceTree = "<group>";
+		};
+		3F4BD5522F59C46C003116AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F4BD5532F59C46C003116AB /* styles.css */,
+				3F4BD5542F59C46C003116AB /* shortcuts.js */,
+				3F4BD5552F59C46C003116AB /* docs */,
+				3F4BD5562F59C46C003116AB /* README.md */,
+				3F4BD5572F59C46C003116AB /* hints.js */,
+				3F4BD5582F59C46C003116AB /* icons */,
+				3F4BD5592F59C46C003116AB /* manifest.json */,
+				3F4BD55A2F59C46C003116AB /* content.js */,
+				3F4BD55B2F59C46C003116AB /* modal.js */,
+				3F4BD55C2F59C46C003116AB /* CLAUDE.md */,
+				3F4BD55D2F59C46C003116AB /* Keeping Shortcuts */,
+			);
+			name = Resources;
+			path = "Keeping Shortcuts Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F4BD5252F59C469003116AB /* Keeping Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4BD54F2F59C46C003116AB /* Build configuration list for PBXNativeTarget "Keeping Shortcuts" */;
+			buildPhases = (
+				3F4BD5222F59C469003116AB /* Sources */,
+				3F4BD5232F59C469003116AB /* Frameworks */,
+				3F4BD5242F59C469003116AB /* Resources */,
+				3F4BD54E2F59C46C003116AB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4BD5442F59C46C003116AB /* PBXTargetDependency */,
+			);
+			name = "Keeping Shortcuts";
+			packageProductDependencies = (
+			);
+			productName = "Keeping Shortcuts";
+			productReference = 3F4BD5262F59C469003116AB /* Keeping Shortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F4BD5402F59C46C003116AB /* Keeping Shortcuts Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4BD54B2F59C46C003116AB /* Build configuration list for PBXNativeTarget "Keeping Shortcuts Extension" */;
+			buildPhases = (
+				3F4BD53D2F59C46C003116AB /* Sources */,
+				3F4BD53E2F59C46C003116AB /* Frameworks */,
+				3F4BD53F2F59C46C003116AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Keeping Shortcuts Extension";
+			packageProductDependencies = (
+			);
+			productName = "Keeping Shortcuts Extension";
+			productReference = 3F4BD5412F59C46C003116AB /* Keeping Shortcuts Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F4BD51E2F59C469003116AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					3F4BD5252F59C469003116AB = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					3F4BD5402F59C46C003116AB = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 3F4BD5212F59C469003116AB /* Build configuration list for PBXProject "Keeping Shortcuts" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F4BD51D2F59C469003116AB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F4BD5272F59C469003116AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F4BD5252F59C469003116AB /* Keeping Shortcuts */,
+				3F4BD5402F59C46C003116AB /* Keeping Shortcuts Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F4BD5242F59C469003116AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BD5302F59C469003116AB /* Icon.png in Resources */,
+				3F4BD5392F59C469003116AB /* Main.storyboard in Resources */,
+				3F4BD5342F59C469003116AB /* Script.js in Resources */,
+				3F4BD52E2F59C469003116AB /* Main.html in Resources */,
+				3F4BD53B2F59C46B003116AB /* Assets.xcassets in Resources */,
+				3F4BD5322F59C469003116AB /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BD53F2F59C46C003116AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BD5652F59C46C003116AB /* content.js in Resources */,
+				3F4BD5622F59C46C003116AB /* hints.js in Resources */,
+				3F4BD5672F59C46C003116AB /* CLAUDE.md in Resources */,
+				3F4BD5642F59C46C003116AB /* manifest.json in Resources */,
+				3F4BD5602F59C46C003116AB /* docs in Resources */,
+				3F4BD55F2F59C46C003116AB /* shortcuts.js in Resources */,
+				3F4BD5632F59C46C003116AB /* icons in Resources */,
+				3F4BD5662F59C46C003116AB /* modal.js in Resources */,
+				3F4BD5612F59C46C003116AB /* README.md in Resources */,
+				3F4BD55E2F59C46C003116AB /* styles.css in Resources */,
+				3F4BD5682F59C46C003116AB /* Keeping Shortcuts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F4BD5222F59C469003116AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BD5362F59C469003116AB /* ViewController.swift in Sources */,
+				3F4BD52A2F59C469003116AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4BD53D2F59C46C003116AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4BD5472F59C46C003116AB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F4BD5442F59C46C003116AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4BD5402F59C46C003116AB /* Keeping Shortcuts Extension */;
+			targetProxy = 3F4BD5432F59C46C003116AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F4BD52C2F59C469003116AB /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4BD52D2F59C469003116AB /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		3F4BD5372F59C469003116AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4BD5382F59C469003116AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F4BD5492F59C46C003116AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F4BD54A2F59C46C003116AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3F4BD54C2F59C46C003116AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keeping Shortcuts Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keeping Shortcuts Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.munksapp.keeping-shortcuts.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3F4BD54D2F59C46C003116AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keeping Shortcuts Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keeping Shortcuts Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.munksapp.keeping-shortcuts.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3F4BD5502F59C46C003116AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keeping Shortcuts/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keeping Shortcuts";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.munksapp.keeping-shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3F4BD5512F59C46C003116AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keeping Shortcuts/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keeping Shortcuts";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.munksapp.keeping-shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F4BD5212F59C469003116AB /* Build configuration list for PBXProject "Keeping Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4BD5492F59C46C003116AB /* Debug */,
+				3F4BD54A2F59C46C003116AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4BD54B2F59C46C003116AB /* Build configuration list for PBXNativeTarget "Keeping Shortcuts Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4BD54C2F59C46C003116AB /* Debug */,
+				3F4BD54D2F59C46C003116AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4BD54F2F59C46C003116AB /* Build configuration list for PBXNativeTarget "Keeping Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4BD5502F59C46C003116AB /* Debug */,
+				3F4BD5512F59C46C003116AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F4BD51E2F59C469003116AB /* Project object */;
+}
