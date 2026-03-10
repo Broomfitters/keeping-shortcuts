@@ -550,14 +550,17 @@
     }
 
     // Double Enter blurs: first Enter selects the option (React Select handles it),
-    // second Enter (when dropdown menu is already closed) blurs the input
+    // second Enter (when dropdown menu is already closed) blurs the input.
+    // Only applies to React Select inputs — other inputs (search, etc.) handle Enter normally.
     if (e.key === 'Enter' && isInputFocused()) {
-      const select = document.activeElement.closest('[class*="__control"], [id^="select-"]');
-      const menu = select && select.closest('[id^="select-"]')?.querySelector('[class*="__menu"]');
-      if (!menu) {
-        // No menu open — this is the second Enter, blur out
-        e.preventDefault();
-        document.activeElement.blur();
+      const select = document.activeElement.closest('[class*="__control"], [id^="select-"], [id^="inbox-select-"]');
+      if (select) {
+        const container = select.closest('[id^="select-"], [id^="inbox-select-"]') || select;
+        const menu = container.querySelector('[class*="__menu"]');
+        if (!menu) {
+          e.preventDefault();
+          document.activeElement.blur();
+        }
       }
       return;
     }
